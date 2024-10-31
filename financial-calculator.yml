@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: financial-calculator
+
+  #Config Server
+  cloud:
+    config:
+      uri: http://localhost:8888
+      fail-fast: true
+      retry:
+        initial-interval: 1000
+        max-attempts: 6
+        max-interval: 2000
+
+  # Database
+  r2dbc:
+    url: r2dbc:pool:mysql://autorack.proxy.rlwy.net:20758/railway
+    username: root
+    password: COwMpxpFoUJbiPrmbclkvaAhNQvsqpWx
+server:
+  port: 8082
