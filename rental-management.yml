@@ -1,6 +1,6 @@
 spring:
   application:
-    name: financial-calculator
+    name: rental-management
 
 #Config Server
   cloud:
@@ -17,5 +17,7 @@ spring:
     url: r2dbc:pool:mysql://autorack.proxy.rlwy.net:12950/railway
     username: root
     password: GsEmFzotOVlbIrioUigyiRIzARwCIPgK
-server:
-  port: 8082
+  
+# Calculator Api
+api:
+  calculator: http://localhost:8082/calculator
