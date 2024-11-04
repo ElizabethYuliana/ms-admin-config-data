@@ -17,7 +17,14 @@ spring:
     url: r2dbc:pool:mysql://autorack.proxy.rlwy.net:12950/railway
     username: root
     password: GsEmFzotOVlbIrioUigyiRIzARwCIPgK
-  
+
+# Eureka
+eureka:
+  client:
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8889/eureka
+
 # Calculator Api
 api:
   calculator: http://localhost:8082/calculator
