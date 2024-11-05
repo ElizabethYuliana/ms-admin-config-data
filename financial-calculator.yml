@@ -14,9 +14,9 @@ spring:
 
 # Database
   r2dbc:
-    url: r2dbc:pool:mysql://autorack.proxy.rlwy.net:12950/railway
+    url: r2dbc:pool:mysql://autorack.proxy.rlwy.net:51033/railway
     username: root
-    password: GsEmFzotOVlbIrioUigyiRIzARwCIPgK
+    password: lgPpyBbpHvzvZmmoZkganhUiyvVggHZa
 server:
   port: 8082
 
