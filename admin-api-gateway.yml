@@ -18,9 +18,9 @@ spring:
           lower-case-service-id: true
       routes:
         - id: id-financial-calculator
-          uri: http://localhost:8082
+          uri: http://localhost:8082/calculator/quote
           predicates:
-            - Path=/financial-calculator/**
+            - Path=/financial-calculator/calculator/quote
         - id: id-rental-management
           uri: lb://RENTAL-MANAGEMENT
           predicates:
