@@ -33,3 +33,9 @@ management:
   endpoint:
     gateway:
       enabled: true
+    metrics:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
